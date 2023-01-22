@@ -12,7 +12,7 @@ pub struct GenericResponse {
 
 #[get("/healthchecker")]
 pub async fn health_checker_handler() -> Result<Json<GenericResponse>, Status> {
-    const MESSAGE: &str = "Build Simple API with Rocket.rs";
+    const MESSAGE: &str = "Build a Simple API with Rocket.rs";
     
     let response_json = GenericResponse {
         status: "success".to_string(),
